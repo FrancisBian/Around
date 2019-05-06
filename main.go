@@ -153,7 +153,7 @@ func handlerPost(w http.ResponseWriter, r *http.Request) {
 	saveToES(p,id)
 
 	//save to big table
-	//saveToBigTable(p, id)
+	saveToBigTable(p, id)
 
 }
 
@@ -193,6 +193,7 @@ func saveToBigTable(p *Post, id string){
 	tbl := bt_client.Open("post")
 	mut := bigtable.NewMutation()
 	t := bigtable.Now()
+	// timestamp
 
 	mut.Set("post", "user", t, []byte(p.User))
 	mut.Set("post", "message", t, []byte(p.Message))
