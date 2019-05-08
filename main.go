@@ -153,7 +153,7 @@ func handlerPost(w http.ResponseWriter, r *http.Request) {
 	saveToES(p,id)
 
 	//save to big table
-	saveToBigTable(p, id)
+	//saveToBigTable(p, id)
 
 }
 
