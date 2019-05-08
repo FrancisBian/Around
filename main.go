@@ -25,7 +25,7 @@ const (
 	DISTANCE = "200km"
 	// Needs to update
 	// Needs to update this URL if you deploy it to cloud.
-	ES_URL = "http://35.235.108.3:9200"
+	ES_URL = "http://35.236.58.159:9200"
 	BUCKET_NAME = "post-images-239004"
 	PROJECT_ID = "around-239004"
 	BT_INSTANCE = "around-post"
